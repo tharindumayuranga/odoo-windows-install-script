@@ -12,4 +12,4 @@ Before installing the dependencies, you must download and install the Build Tool
 https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019
 
 
-### more : https://www.odoo.com/documentation/15.0/administration/install/install.html#setup-install-source-windows
+### more : https://www.odoo.com/documentation/15.0/administration/install/install.html#setup-install-source-windows-prepare
