@@ -1,4 +1,4 @@
-# odoo-windows-install-script
+# odoo windows install script
 odoo 15.0 branch automatically clone, create conf file, odoo server start bat file, custom/addons folder 
 
 ## Prerequisite
