@@ -1,6 +1,11 @@
 # odoo windows install script
 odoo 15.0 branch automatically clone, create conf file, odoo server start bat file, custom/addons folder 
 
+already configured for vscode debugging
+
+  In vscode -> Run -> Run without debugging
+
+
 ## Prerequisite
 python-3.8.10
 
