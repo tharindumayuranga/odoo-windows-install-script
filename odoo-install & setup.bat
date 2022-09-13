@@ -28,7 +28,7 @@ pip install pyopenssl==22.0.0
 
 pip install wkhtmltopdf
 
-mkdir conf,custom\addons
+mkdir conf,custom\addons,.vscode
 @echo off
 
 echo.
@@ -65,12 +65,41 @@ Echo;http_port = %port%
 ) > "%out%\odoo.conf"
 
 
+mkdir conf,custom\addons,.vscode
+
+
+(
+Echo;{
+Echo;    "version": "0.2.0",
+Echo;    "configurations": [
+Echo;        {
+Echo;            "name": "Python: Odoo15",
+Echo;            "type": "python",
+Echo;            "request": "launch",
+Echo;            "stopOnEntry": false,
+Echo;            "python": "${workspaceRoot}\\venv\\Scripts\\python.exe",
+Echo;            "console": "integratedTerminal",
+Echo;            "program": "${workspaceRoot}\\odoo\\odoo-bin",
+Echo;            "args": [
+Echo;                "--config=${workspaceRoot}\\conf\\odoo.conf",
+Echo;            ],
+Echo;            "cwd": "${workspaceRoot}",
+Echo;            "env": {},
+Echo;            "envFile": "${workspaceRoot}/.env",
+Echo;            "redirectOutput": true,
+Echo;        }
+Echo;    ]
+Echo;}
+) > ".vscode\launch.json"
+
 echo.
 echo.
 
-echo *************************************************
-echo ***** To start server double click odoo.bat *****
-echo *************************************************
+echo **************************************************
+echo ***** To start server double click odoo.bat  *****
+echo **************************************************
+echo ***** vscode -^> Run -^> Run without debugging *****
+echo **************************************************
 
 echo.
 echo.
