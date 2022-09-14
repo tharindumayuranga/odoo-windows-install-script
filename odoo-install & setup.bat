@@ -95,11 +95,17 @@ Echo;}
 echo.
 echo.
 
-echo **************************************************
-echo ***** To start server double click odoo.bat  *****
-echo **************************************************
-echo ***** vscode -^> Run -^> Run without debugging *****
-echo **************************************************
+echo ***********************************************************
+echo ***********************************************************
+echo ****      To start server double click odoo.bat       *****
+echo ***********************************************************
+echo ***********************************************************
+echo **** To create a module double click create_module.bat ****
+echo ***********************************************************
+echo ***********************************************************
+echo ****      vscode -^> Run -^> Run without debugging      *****
+echo ***********************************************************
+echo ***********************************************************
 
 echo.
 echo.
@@ -120,6 +126,15 @@ echo.
 echo.
 
 pause
+
+(
+Echo;@echo off
+Echo;echo ex: School Management
+Echo;echo.
+Echo;Set /p addon=Your module name :
+Echo;venv\Scripts\python.exe odoo\odoo-bin scaffold "%%addon%%" custom\addons\
+)>create_module.bat
+
 
 (
 Echo;@echo off
