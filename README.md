@@ -1,6 +1,10 @@
 # odoo windows install script
 odoo 15.0 branch automatically clone, create conf file, odoo server start bat file, custom/addons folder 
 
+create a custom module just click a create_module.bat.
+
+custom module create in custom/addons folder.
+
 already configured for vscode debugging
 
   In vscode -> Run -> Run without debugging
